@@ -1,0 +1,46 @@
+/******************carousel**********************/
+#carousel{position:relative;}
+	#carousel .es-carousel{
+		overflow:hidden;
+		width:317px;
+		padding:5px 0 4px 3px;
+		margin-left:-3px;
+	}
+		#carousel li{float:left; position:relative;}
+#carousel .es-nav-prev, #carousel .es-nav-next{
+	display:block !important;
+	width:39px;
+	height:39px;
+	overflow:hidden;
+	background-position:center top;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:-59px;
+	text-indent: -100%;
+	white-space: nowrap;
+	font-size:0;
+	line-height:0;
+	cursor:pointer;
+	z-index:997;
+}
+#carousel .es-nav-prev{background-image:url(../images/carousel-prev.png); right:41px;}
+#carousel .es-nav-next{background-image:url(../images/carousel-next.png); right:2px;}
+	#carousel .es-nav-prev:hover, #carousel .es-nav-next:hover{background-position:0 -48px;}
+
+
+/*-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 995px) {
+	#carousel .es-carousel{width:251px; padding:5px 2px 4px 3px;}
+	#carousel .es-nav-prev, #carousel .es-nav-next{top:-48px;}
+}
+
+@media only screen and (max-width: 767px) {
+	#carousel .es-carousel{width:415px; margin-left:0;}
+	#carousel li{width:136px !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	#carousel .es-carousel{width:295px;}
+	#carousel li{width:146px !important;}
+}

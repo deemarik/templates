@@ -1,0 +1,16 @@
+.menu li li a,
+#search-form input, #search-form a, #contact-form input, #contact-form textarea,
+.slides_container,
+.box1,
+.img-box3,
+.button,
+.quote-content, .quote-light{behavior: url(js/PIE.htc); position:relative;}
+
+.menu ul,
+.img-box2 .img-border,
+.social-icons a{behavior: url(js/PIE.htc);}
+
+#search-form a{border-radius:0; box-shadow:none;}
+.social-icons a{box-shadow:0 1px 5px #a69fa3; background-color:#c85a6c;}
+	.social-icons a:hover{background-color:#513b4a;}
+#toTopHover {filter:alpha(opacity=0);}
