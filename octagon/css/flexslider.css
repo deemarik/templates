@@ -1,0 +1,85 @@
+#container {margin: 0 auto;width: 940px; position:relative;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+
+.flexslider {
+	width: 100%;
+	margin: 0;
+	position: relative;
+	margin-top:25px;
+}
+.flexslider .slides img {
+	max-width: 100%;
+	display: block;
+}
+
+
+.flex-caption {
+	position: absolute;
+	left:0;
+	top:500px;
+	z-index:1;
+	width:100%;
+	color:#fff;
+	font:900 30px/36px 'Lato', sans-serif;
+	text-transform: uppercase;
+	background-color:#3d3939;
+}
+	.flex-caption p {
+		padding: 0 38px;
+	}
+	
+/* Control Nav */
+.flex-direction-nav {
+	display:none;
+}
+
+.flex-control-nav {
+	position:absolute;
+	right:28px;
+	bottom:28px;
+	list-style:none;
+	z-index:900;
+}
+.flex-control-nav li {
+	float:left;
+	margin-left:7px;
+}
+.flex-control-nav li a {
+	display:block;
+	text-indent:-999em;
+	width:17px;
+	height:17px;
+	background: url('../images/pagination.png') no-repeat 100% 0;
+}
+	.flex-control-nav li a:hover, .flex-control-nav li a.flex-active {
+		background-position:0 0;
+	}
+	
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	.flex-control-nav {
+		bottom:20px;
+	}
+	.flex-caption {
+		top:392px;
+	}
+	.flex-caption p {
+		padding: 0 28px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.flex-caption {display:none;}
+	.flex-control-nav {
+		bottom:4px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.flex-control-nav {
+		bottom:8px;
+	}
+}

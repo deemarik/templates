@@ -1,0 +1,120 @@
+/* CONTACT FORM
+========================================================================= */
+#confirm {
+	position: relative;
+	height: auto;
+	padding-bottom: 80px;
+}
+#confirm  label {
+	display: block;
+	position: relative;
+	min-height: 45px;
+	width: 200px;
+}
+#confirm  label.message {
+	min-height: 280px;
+}
+#confirm input {
+	display: block;
+	margin: 0;
+	outline: none;
+	box-shadow: none !important;
+	padding: 0 12px;
+	width: 270px;
+	height: 39px;
+	font: 12px/20px Arial, sans-serif;
+	color: #7c7155;
+	background: #e7d195;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#confirm textarea {
+	resize: none;
+	overflow: auto;
+	display: block;
+	margin: 0;
+	outline: none;
+	box-shadow: none !important;
+	padding: 10px 12px;
+	width: 515px;
+	height: 236px;
+	font: 12px/20px Arial, sans-serif;
+	color: #7c7155;
+	background: #e7d195;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#confirm label > span {
+	color: #3d3939;
+	position:relative;
+	left: 10px;
+}
+#confirm .success {
+	font: bold 11px/20px Arial, sans-serif;
+	display:none;
+	margin-bottom:10px;
+}
+#confirm  .empty, #confirm  .error {
+	font: 11px/20px Arial, sans-serif;
+	display:none;
+}
+#confirm .btns {
+	position: absolute;
+	right: 0;
+}
+#confirm .btns a {
+	margin-left: 15px;
+}
+
+/* MAP
+========================================================================= */
+dl.adress {
+	display: block;
+}
+dl.adress dt {
+	font-weight:bold;
+	color:#3d3939;
+}
+dl.adress dd {
+	width: 170px;
+}
+dl.adress dd span {
+	float: right;
+}
+iframe {
+	width: 100%;
+	height: 303px;
+	margin:0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* MEDIA */
+/*==========================================*/
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+	#confirm textarea {
+		width: 404px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#confirm input {
+		width: 276px;
+	}
+	#confirm textarea {
+		width: 276px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#confirm input {
+		width: 270px;
+	}
+	#confirm textarea {
+		width: 394px;
+	}
+}

@@ -1,0 +1,14 @@
+body {
+	width:100%;
+	min-width:960px;
+}
+#confirm input {line-height:39px;}
+
+.button, .list-block-1 li, .test, .list-2 a, .indent-col-1, .block-service, #confirm input, #confirm textarea {
+	behavior: url('js/PIE.htc');
+	position:relative;
+}
+
+.sf-menu > li, .sf-menu ul, .sf-menu li li {
+	behavior: url('js/PIE.htc');
+}
